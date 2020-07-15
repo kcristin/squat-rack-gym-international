@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <?php wp_head(); ?>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="school-logo-text float-left">
+        <a href="<?php echo site_url(); ?>"><strong>Squat Rack Gym</strong> <em>International</em></a>
+      </h1>
+      <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+      <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
+      <div class="site-header__menu group">
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="<?php echo site_url('/about-us'); ?>">About Us</a></li>
+            <li><a href="<?php echo site_url('/class-schedule'); ?>">Classes</a></li>
+            <li><a href="<?php echo site_url('/events'); ?>">Events</a></li>
+            <li><a href="<?php echo site_url('/locations'); ?>">Locations</a></li>
+            <li><a href="<?php echo site_url('/blog'); ?>">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__util">
+          <a href="#" class="btn btn--small btn--orange float-left push-right">Login</a>
+          <a href="#" class="btn btn--small btn--dark-orange float-left">Sign Up</a>
+          <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+        </div>
+      </div>
+    </div>
+  </header>
